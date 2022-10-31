@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@1,700&family=Neuton:wght@700&family=Noto+Sans+KR:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+
+        body{
+            background: url(https://picsum.photos/id/1002/600/600) no-repeat center fixed;
+            background-size: cover;
+        }
+
+        h2{
+            margin: 0;
+            color: #e51824;
+            padding: 0;
+        }
+        h2, p, a{
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        ul{
+            margin: 0 auto;
+        }
+        a{
+            text-decoration: none;
+            color: inherit;
+        }
+        p{
+            margin: 0;
+        }
+
+        main{
+            width: 940px; height: 800px;
+            background-color: #819ed6;
+            border: 3px solid salmon;
+            margin: 0 auto;
+
+            position: relative;
+        }
+        header{
+            
+            width: 940px; height: 130px;
+            background-color: #7d1e6a;
+        }
+
+        header img{
+            border-radius: 50%;
+            margin: 0;
+        }
+
+        header h1{            
+            position: absolute;
+            left: 10px;
+           
+            
+        }
+        header .title{
+            line-height: 0.8;
+            padding-top: 14px;
+            
+        }
+
+        header .title h2{
+            color: white; 
+            padding-left:110px ;
+        }
+
+        .title h2:nth-child(1){
+            font-family: 'Lobster Two', cursive;
+            font-size: 45px;       
+            padding-top: 15px;
+        }
+        .title h2:nth-child(2){
+            font-family: 'Neuton', serif;
+            font-size: 35px;
+        }
+        nav #gnb{
+            background-color: #ffcd38;
+            width: 940px; height: 41px;
+            line-height: 41px;
+            padding: 0;
+            
+        }
+
+        nav #gnb li{
+            
+            list-style: none;
+            float: left;
+            font-size: 18px;
+            font-weight: bold;
+            color: #7d1e6a;
+        }
+
+        nav #gnb li a{
+            display: block;
+            margin-left: 25px;
+        }
+        nav #gnb li a:hover{
+            color: #ff006a;
+            font-weight: bold;
+        }
+
+        aside{
+            position: absolute;
+            right: 0;
+            border-left: 1px solid red;
+
+            height: 593px; width: 30%;
+            background-color: white;            
+        } 
+        aside h2{
+            padding: 25px 0 20px 20px;
+        }
+
+        aside p{
+            margin-left: 20px;
+            margin-top: 12px;
+            font-size: 20px;
+        }
+
+        aside .add{
+            margin-top: 165px;
+        }
+
+        aside #wrapper {
+            padding: 0;         
+            margin-top: 17px;   
+            height:50px ; line-height: 34px;
+        }
+
+        aside #wrapper li {
+            list-style: none;
+            padding: 10px 0 10px 20px;
+            font-size: 18px;
+            border-bottom: 1px solid red;
+        }
+        aside #wrapper li a:hover{
+            color: #819ed6;
+            font-weight: bold;
+        }
+        section{
+            width: 70%; height: 593px;
+            background-color: #f1eee9;
+            border-right: red 1px solid;
+            position: relative;
+        }
+        section figure{
+            margin: 0;
+            text-align: center;    
+            
+        }
+        img{
+            margin-top: 5px;
+        }
+        section figure .img01{
+            background-color: white;
+            width: 300px; height: 230px;
+            border: #e51824 1px solid;
+            position: absolute;
+            top: 30px; left: 20px;
+        }
+
+        section figure figcaption {
+            width: 294px; 
+            text-align: right;
+            font-style: italic;
+            color: darkgrey;
+        }
+        section figure .img02{
+            background-color: white;
+            width: 300px; height: 230px;
+            border: #e51824 1px solid;
+            position: absolute;
+            bottom: 10%; left: 20px;
+        }
+        article.vegi{
+            width: 288px;
+            position: absolute;
+            top: 4%; left: 50%;
+            margin-left: 10px;
+            
+        }
+
+        article h2{
+            color: black;
+            padding:0;
+            margin-bottom: 20px;
+        }
+        article h3{
+            color:#e51824;
+            margin-bottom: 20px;
+        }
+        article.vegi2{
+            width: 293px;
+            position: absolute;
+            bottom: 20%; left: 50%;
+            margin-left: 10px;
+        }        
+        footer {
+            margin: 0; padding-left: 10px;
+            width: 930px; height: 37px; line-height: 37px;
+            background-color: #7d1e6a;
+            color: white;
+        }
+        
+
+
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <h1><img src="https://picsum.photos/id/1/90/90" alt="로고"></h1>
+            <div class="title">
+                <h2>kim's kitchen</h2>
+                <h2>Cooking class</h2>
+            </div>
+        </header>
+        <nav>
+            <ul id="gnb">
+                <li><a href="#">홈</a></li>
+                <li><a href="#">소개</a></li>
+                <li><a href="#">교실</a></li>
+                <li><a href="#">케이터링</a></li>
+                <li><a href="#">연락처</a></li>
+            </ul>
+        </nav>
+        <aside>
+            <h2>인기요리법</h2>
+            <ul id="wrapper">
+                <li><a href="#">후라이드</a></li>
+                <li><a href="#">고추바사삭</a></li>
+                <li><a href="#">양념치킨</a></li>
+                <li><a href="#">강정</a></li>
+            </ul>
+            <div class="add">
+                <h2>연락처</h2>
+                <p>경기 수원시 팔달구 매산동</p>
+            </div>
+        </aside>
+        <section>
+            <figure class="box">
+                <div class="img01">
+                    <img src="https://picsum.photos/id/1/290/190" alt="oriental salad">                
+                    <figcaption>oriental salad </figcaption>
+                </div>
+            </figure>
+            <article class="vegi">
+                <h2>채식주의자</h2>
+                <h3>런던에서의 5주 코스</h3>
+                <p>5주간 채식주의자 음식에 대해 소개하고 쌀과 국수 요리를 가르친다.</p>
+            </article>
+            <figure class="box">
+                <div class="img02">
+                <img src="https://picsum.photos/id/1/290/190" alt="soy sauce">
+                <figcaption>soy sauce</figcaption>
+            </div>
+            </figure>        
+            <article class="vegi2">
+                <h2>소스 마스터클래스</h2>
+                <h3>1일 워크샵</h3>
+                <p>1일 집중 코스에서는 다양한 요리에서 사용할 수 있는 가장 맛있는 소스를 만드는 방법을 살펴본다.</p>
+            </article>
+        </section>
+        <footer>@Kim's Kitchen 김씨네 키친</footer>
+    </main>
+</body>
+</html>
